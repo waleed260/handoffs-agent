@@ -1,7 +1,7 @@
-from re import M
+
 from agents import Agent ,Runner ,AsyncOpenAI,OpenAIChatCompletionsModel, handoff , set_tracing_disabled
 import os 
-from httpx import Client
+
 from rich import print
 from dotenv import load_dotenv,find_dotenv
 from agents import handoff
@@ -35,5 +35,6 @@ coach  = Agent(name = " assistant",
 
 result = Runner.run_sync(coach ,"what is 37 +32=? ")
 print(result.final_output)
+
 
 
